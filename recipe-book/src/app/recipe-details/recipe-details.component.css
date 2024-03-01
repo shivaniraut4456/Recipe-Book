@@ -1,0 +1,66 @@
+/* src/app/recipe-details/recipe-details.component.css */
+
+
+h2 {
+  margin-top: 20px;
+  color: #007bff; /* Heading color */
+  font-size: 24px; /* Heading font size */
+  justify-content: center;
+  margin-left: 150px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+ 
+}
+
+.list-group-item {
+  color: #fa11c4; /* List item color */
+  font-size: 16px; /* List item font size */
+  
+}
+
+/* Add any additional styling as needed */
+
+
+button {
+  color: #0d0000fc;
+  background-color: hsla(255, 33%, 95%, 0.956);
+  font-size: 16px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 10px 20px;
+  justify-content: flex-end;
+
+}
+
+
+
+.container {
+  background-image: url('https://wallpapers.com/images/hd/plain-black-with-wooden-pattern-09v7n22juf06luep.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: fixed;
+  margin: 50px 50px;
+  padding: 0;
+  height: auto;
+  width: auto;
+  border-radius: 50px;
+  
+
+  
+}
+h3,p{
+  font-size: 20px;
+  color: white;
+
+}
+p{
+  text-align: center;
+  font-size: bold;
+}
+
+h3{
+  text-align: left;
+}

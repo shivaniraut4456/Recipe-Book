@@ -1,0 +1,13 @@
+
+
+<div class="container mt-4">
+    <h2 class="mb-4">Showing results for {{searchText}}.....</h2>
+      <ul class="list-group">
+        <li *ngFor="let recipe of recipeService.recipeResults" class="list-group-item border mb-2" [routerLink]="['/recipe-details/', recipe.id]" >
+          {{ recipe.title }}
+        </li>
+      </ul>
+    
+    </div>
+
+

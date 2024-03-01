@@ -1,0 +1,31 @@
+<!-- src/app/recipe-details/recipe-details.component.html -->
+
+
+<div class="container mt-4" *ngIf="recipeService.selectedRecipe">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="mb-4">{{ recipeService.selectedRecipe.title }}</h2>
+            <img [src]="recipeService.selectedRecipe.image" alt="Recipe Image" class="img-fluid mb-3 ">
+            
+            <div class="mb-4">
+                <p>Ready In Minutes:  {{ recipeService.selectedRecipe.readyInMinutes }}</p>
+                <p>Servings:  {{ recipeService.selectedRecipe.servings }}</p>
+            </div>
+            
+            <div class="mb-4">
+                <h3>Ingredients:</h3>
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let ingredient of recipeService.selectedRecipe.ingredients">{{ ingredient.original }}</li>
+                </ul>
+            </div>
+
+            <div class="mb-4">
+                <h3>Instructions:</h3>
+                <ol class="list-group">
+                    <li class="list-group-item" *ngFor="let step of recipeService.selectedRecipe.instructions">{{ step.step }}</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <button (click)="goBackToSearch()">Go Back to Search</button>
+</div>

@@ -1,0 +1,39 @@
+.container {
+    padding-top: 20px;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: white;
+    font-weight: bolder;
+  }
+  
+  .input-group input {
+    color: #007bff;
+    font-size: 16px;
+    border-radius: 20px;
+    height: 45px;
+    margin: 0px 200px;
+  }
+  
+  .btn-outline-secondary {
+    color: black;
+    background-color: aliceblue;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding: 10px 150px;
+  }
+  .row {
+    background-image: url('https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg?cs=srgb&dl=pexels-lukas-616401.jpg&fm=jpg');
+    background-size: cover;
+    background-position: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+  
+    
+  }
+  
